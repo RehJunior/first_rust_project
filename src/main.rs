@@ -18,7 +18,7 @@ fn floats() {
 
     println!("x times y is {}", x * y)
 }
-///! This is a Way to reasign a value with mut
+///! This is a Way to reasign a value with mut so that it is mutabil
 // fn mutability() {
 //     let mut z = 1.1;
 //     z = 2.2;
