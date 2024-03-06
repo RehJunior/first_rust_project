@@ -4,7 +4,8 @@ fn main() {
     println!("{}, {}!", greeting, subject);
     println!("This will never get run.");
     floats();
-    mutability();
+    let answer = multiply(1.1, 2.2);
+    println!("1.1 * 2.2 = {} ", answer);
 }
 #[allow(dead_code)]
 fn floats() {
@@ -13,9 +14,11 @@ fn floats() {
 
     println!("x times y is {}", x * y)
 }
-
-fn mutability() {
-    let mut z = 1.1;
-    z = 2.2;
-    print!("{}", z)
+///! This is a Way to reasign a value with mut
+// fn mutability() {
+//     let mut z = 1.1;
+//     z = 2.2;
+// }
+fn multiply(x: f64, y: f64) -> f64 {
+    return x * y;
 }
