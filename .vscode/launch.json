@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'first_rust_project'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=first_rust_project",
+          "--package=first_rust_project"
+        ],
+        "filter": {
+          "name": "first_rust_project",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'first_rust_project'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=first_rust_project",
+          "--package=first_rust_project"
+        ],
+        "filter": {
+          "name": "first_rust_project",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/samet/Documents/first_rust_project",
+      "program": "/home/samet/Documents/first_rust_project/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
