@@ -9,6 +9,7 @@ fn main() {
     integer();
     multiply(-10, 2);
     divide(20, 20);
+    cats();
 }
 #[allow(dead_code)]
 fn floats() {
@@ -23,7 +24,7 @@ fn floats() {
 //     z = 2.2;
 // }
 fn multiplyfloats(x: f64, y: f64) -> f64 {
-    return x * y;
+    x * y
 }
 fn integer() {
     let ninty = 90;
@@ -52,8 +53,20 @@ fn integer() {
 //* char is basically like u32
 
 fn multiply(x: i64, y: u8) -> i64 {
-    return x * (y as i64);
+    x * (y as i64)
 }
 fn divide(x: i32, y: u16) -> f64 {
-    return x as f64 / y as f64;
+    x as f64 / y as f64
+}
+fn cats() {
+    let cats = 10;
+    let message = if cats > 1_000 {
+        "Too many cats!"
+    } else if cats > 1 {
+        "Multiple cats!"
+    } else {
+        "Need more cats"
+    };
+
+    println!("{}", message);
 }
