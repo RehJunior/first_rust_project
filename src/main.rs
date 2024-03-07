@@ -1,4 +1,9 @@
+mod greetings;
+mod task1;
 fn main() {
+    task1::task();
+    greetings::hello();
+    greetings::goodbye();
     let subject = "World";
     let greeting = format!("Hello, {}!", subject);
     println!("{}, {}!", greeting, subject);
@@ -11,6 +16,7 @@ fn main() {
     divide(20, 20);
     cats();
 }
+
 #[allow(dead_code)]
 fn floats() {
     let x = 1.1;
@@ -31,26 +37,26 @@ fn integer() {
     let negative_five = -5;
     let one_thousand = 1_000;
     let exactly_three = 10 / 3;
-    // let this_whill_panic = 5/0; ///! KABOOM!
+    // let this_whill_panic = 5 / 0; ///! KABOOM!
     println!(
         "{}, {}, {}, {}",
         ninty, negative_five, one_thousand, exactly_three
     )
 }
-//* Integer Sizes
-//* i8   8bits  (1B)
-//* i16  16bits (2B)
-//* i32  32bits (4B)
-//* i64  64bits (8B)
-//* i128 128bits (16B)
+// * Integer Sizes
+// * i8   8bits  (1B)
+// * i16  16bits (2B)
+// * i32  32bits (4B)
+// * i64  64bits (8B)
+// * i128 128bits (16B)
 
-//* Unsigned Integers
-//* u8 0-255
-//* u16 0-65,535
-//* u32 0-4,294,967,295
-//* u64 0-18,446,744,073,709,551,615
-//* u128 0-170,141,183,460,469,231,731,687,303,715,884,105,728
-//* char is basically like u32
+// * Unsigned Integers
+// * u8 0-255
+// * u16 0-65,535
+// * u32 0-4,294,967,295
+// * u64 0-18,446,744,073,709,551,615
+// * u128 0-170,141,183,460,469,231,731,687,303,715,884,105,728
+// * char is basically like u32
 
 fn multiply(x: i64, y: u8) -> i64 {
     x * (y as i64)
