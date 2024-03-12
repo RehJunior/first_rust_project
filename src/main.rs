@@ -43,14 +43,14 @@ fn integer() {
         ninty, negative_five, one_thousand, exactly_three
     )
 }
-// * Integer Sizes
-// * i8   8bits  (1B)
-// * i16  16bits (2B)
+// * Integer Sizes damit kann man in den minus bereich
+// * i8   8bits  (1B) -127 to 128
+// * i16  16bits (2B) -32,768 to 32,767
 // * i32  32bits (4B)
 // * i64  64bits (8B)
 // * i128 128bits (16B)
 
-// * Unsigned Integers
+// * Unsigned Integers bedeutet keine minus bereiche 
 // * u8 0-255
 // * u16 0-65,535
 // * u32 0-4,294,967,295
