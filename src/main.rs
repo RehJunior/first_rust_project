@@ -20,9 +20,6 @@ fn main() {
     multiply(-10, 2);
     divide(20, 20);
     cats();
-    structs::new_point(1, 1, 1);
-    structs::new_point1(2, 2, 2);
-
 }
 
 #[allow(dead_code)]
