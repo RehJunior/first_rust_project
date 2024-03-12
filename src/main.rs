@@ -1,6 +1,10 @@
+use crate::tuples::tuples;
+
 mod greetings;
 mod task1;
+mod tuples;
 fn main() {
+    tuples();
     task1::task();
     greetings::hello();
     greetings::goodbye();
@@ -50,7 +54,7 @@ fn integer() {
 // * i64  64bits (8B)
 // * i128 128bits (16B)
 
-// * Unsigned Integers bedeutet keine minus bereiche 
+// * Unsigned Integers bedeutet keine minus bereiche
 // * u8 0-255
 // * u16 0-65,535
 // * u32 0-4,294,967,295
