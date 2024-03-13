@@ -1,11 +1,11 @@
-use crate::tuples::tuples;
-
+mod arrays;
 mod greetings;
+mod structs;
 mod task1;
 mod tuples;
-mod structs;
 fn main() {
-    tuples();
+    arrays::array();
+    tuples::tuples();
     task1::task();
     greetings::hello();
     greetings::goodbye();
