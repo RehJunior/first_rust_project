@@ -14,6 +14,8 @@ fn main() {
     } else {
         println!("It is not a coastal city.");
     }
+    let my_point = structs::new_point1(1, 2, 3);
+    println!("Point x: {}, y: {}, z: {}", my_point.x, my_point.y, my_point.z);
     arrays::array();
     tuples::tuples();
     task1::task();
