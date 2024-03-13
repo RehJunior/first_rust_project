@@ -3,11 +3,11 @@ pub struct Point {
     pub y: i64,
     pub z: i64,
 }
-// Ein weg um ein
+// Ein weg um den point zu returnen 
 pub fn _new_point(x: i64, y: i64, z: i64) -> Point {
     Point { x: x, y: y, z: z }
 }
-// Ein anderer kürzerer Weg
+// Ein anderer kürzerer Weg zum returnen 
 pub fn new_point1(x: i64, y: i64, z: i64) -> Point {
     Point { x, y, z }
 }
