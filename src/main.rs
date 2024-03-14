@@ -83,7 +83,7 @@ fn divide(x: i32, y: u16) -> f64 {
     x as f64 / y as f64
 }
 fn cats() {
-    let cats = 10;
+    let cats = 0;
     let message = if cats > 1_000 {
         "Too many cats!"
     } else if cats > 1 {
