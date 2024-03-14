@@ -1,10 +1,11 @@
 mod arrays;
+mod enums;
 mod greetings;
 mod structs;
 mod task1;
 mod task2;
 mod tuples;
-mod enums;
+mod type_parameters;
 fn main() {
     enums::examples();
     let rustville: task2::City = task2::new_city(123, false);
@@ -16,7 +17,10 @@ fn main() {
         println!("It is not a coastal city.");
     }
     let my_point = structs::new_point1(1, 2, 3);
-    println!("Point x: {}, y: {}, z: {}", my_point.x, my_point.y, my_point.z);
+    println!(
+        "Point x: {}, y: {}, z: {}",
+        my_point.x, my_point.y, my_point.z
+    );
     arrays::array();
     tuples::tuples();
     task1::task();
@@ -33,6 +37,7 @@ fn main() {
     multiply(-10, 2);
     divide(20, 20);
     cats();
+    type_parameters::types();
 }
 
 #[allow(dead_code)]
