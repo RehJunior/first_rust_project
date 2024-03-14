@@ -4,8 +4,10 @@ mod structs;
 mod task1;
 mod task2;
 mod tuples;
+mod enums;
 // task2 wird verschoben wenn ich das importieren besser drauf habe
 fn main() {
+    enums::examples();
     let rustville: task2::City = task2::new_city(123, false);
     println!("This city can be described as: {}", rustville.description);
 
